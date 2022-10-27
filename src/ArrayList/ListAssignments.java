@@ -136,7 +136,10 @@ public class ListAssignments {
         
          ArrayList<String> clone = (ArrayList<String>) original.clone();
          System.out.println(clone);
-         clone.add("Phython"); //does shallow copy. not Deep copy.
+         clone.add("Phython"); //does shallow copy, that means changes made to original wont affect the cloned one.
+	         //similarly chages made to cloned one doesnot affect original.
+	         //but this can be found only with objects and not in primitives
+	         System.out.println(original);//does shallow copy. not Deep copy.
          //but this can be found only with objects and not in primitives
          System.out.println(original);
          System.out.println(clone); // for primitives it does deep copy only.
